@@ -33,7 +33,9 @@ Many “text” PDFs hide decisive information in graphics: bar charts, screensh
 * One retriever searches text + images together.
 
 <img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/clip_embedding_space.png" width="400"/>
+
 ---
+
 ## Repository / Notebook
 
 * **`multimodalopenai.ipynb`** – the complete implementation. [Open Colab Notebook](https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodalopenai.ipynb)
