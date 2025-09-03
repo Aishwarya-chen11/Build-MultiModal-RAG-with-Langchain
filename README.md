@@ -24,10 +24,19 @@ Traditional (text-only) RAG misses answers hidden in **charts, plots, and scanne
 * Keep the system **simple and fast**: one embedding model (CLIP), one FAISS store, thin LangChain wrappers.
 
 ---
+## Why Multimodal RAG?
 
+Many “text” PDFs hide decisive information in graphics: bar charts, screenshots, logos, tables rendered as pixels, etc. A text-only pipeline can’t retrieve these. CLIP (Contrastive Language–Image Pretraining) gives us a shared latent space so:
+
+* Text queries can match images that depict the answer.
+* Image-derived captions aren’t required (though you can add them later).
+* One retriever searches text + images together.
+
+<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/clip_embedding_space.png" width="600"/>
+---
 ## Repository / Notebook
 
-* **`multimodalopenai.ipynb`** – the complete implementation.
+* **`multimodalopenai.ipynb`** – the complete implementation. [Open Colab Notebook](https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodalopenai.ipynb)
 
 > The code expects a sample PDF named **`multimodal_sample.pdf`** (contains text + a bar chart).
 
@@ -52,6 +61,7 @@ User query ──CLIP(text)→ embedding ──┴─ similarity_search_by_vecto
                                      │
                             GPT-4.1 (vision) → grounded answer
 ```
+<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodal_rag_architecture.png" width="600"/>
 
 ---
 
