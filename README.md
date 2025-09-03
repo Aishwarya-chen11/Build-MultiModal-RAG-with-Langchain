@@ -150,23 +150,12 @@ export OPENAI_API_KEY=your_key_here
 
 ### 4) Run
 
-* Open **`1-multimodalopenai.ipynb`** and execute all cells.
+* Open **`multimodalopenai.ipynb`** and execute all cells. [Open Colab Notebook](https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodalopenai.ipynb)
 * Or adapt the final cells into a script and run:
 
   ```bash
   python app.py   # where app.py wraps multimodal_pdf_rag_pipeline(...)
   ```
-
----
-
-## Results (fill from your run)
-
-* **Qualitative:** For visual questions (“what does the chart show?”) the retriever returns the **figure** + nearby **text**; answers correctly cite the trend (e.g., “steady increase; Q3 highest”).
-* **Quantitative (optional):** add RAG-Triad evals
-
-  * **CR (Context Relevance)** = \_\_\_\_ | **G (Groundedness)** = \_\_\_\_ | **AR (Answer Relevance)** = \_\_\_\_ (on \_\_\_ queries)
-* **Ops:** Avg latency \_\_\_\_ s | Tokens/query \_\_\_\_ | Cost/query \_\_\_\_.
-
 ---
 
 ## Design Choices & Trade-offs
