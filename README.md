@@ -32,7 +32,7 @@ Many “text” PDFs hide decisive information in graphics: bar charts, screensh
 * Image-derived captions aren’t required (though you can add them later).
 * One retriever searches text + images together.
 
-<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/clip_embedding_space.png" width="600"/>
+<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/clip_embedding_space.png" width="400"/>
 ---
 ## Repository / Notebook
 
@@ -61,7 +61,7 @@ User query ──CLIP(text)→ embedding ──┴─ similarity_search_by_vecto
                                      │
                             GPT-4.1 (vision) → grounded answer
 ```
-<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodal_rag_architecture.png" width="600"/>
+<img src="https://github.com/Aishwarya-chen11/Build-MultiModal-RAG-with-Langchain/blob/main/multimodal_rag_architecture.png" width="700"/>
 
 ---
 
