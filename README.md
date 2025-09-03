@@ -27,7 +27,7 @@ Traditional (text-only) RAG misses answers hidden in **charts, plots, and scanne
 
 ## Repository / Notebook
 
-* **`1-multimodalopenai.ipynb`** – the complete implementation.
+* **`multimodalopenai.ipynb`** – the complete implementation.
 
 > The code expects a sample PDF named **`multimodal_sample.pdf`** (contains text + a bar chart).
 
